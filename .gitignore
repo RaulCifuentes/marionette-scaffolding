@@ -1,0 +1,7 @@
+.idea/**
+bower.json
+npm-debug.log
+public/images/generic/
+public/lib/backbone.babysitter/
+public/lib/backbone.marionette/
+public/lib/backbone.wreqr/
