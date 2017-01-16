@@ -7,6 +7,8 @@ define([
     appRoutes: {
       "settings" : "settings",
 
+      "playing": "playing",
+
       "*actions" : "index"
     }
   });

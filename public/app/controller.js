@@ -4,8 +4,10 @@ define([
 
   'view/header/header',
   'view/index/index',
-  'view/settings/settings'
-], function (Marionette, App, HeaderView, IndexView, SettingsView) {
+  'view/settings/settings',
+  'view/playing/playing',
+
+], function (Marionette, App, HeaderView, IndexView, SettingsView, PlayingView) {
 
   return Marionette.Controller.extend({
 
@@ -18,6 +20,9 @@ define([
     },
     settings: function() {
       App.layout.content.show(new SettingsView());
+    },
+    playing: function () {
+      App.layout.content.show(new PlayingView());
     }
   });
 });

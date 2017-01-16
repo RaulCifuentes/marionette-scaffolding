@@ -1,34 +1,110 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
 <head>
 
-  <meta charset="utf-8">
-  <title>marionette-scaffolding</title>
-  <meta name="description" content="marionette-scaffolding">
-  <meta name="author" content="Nil Gradisnik">
+    <meta charset="utf-8">
+    <title>marionette-scaffolding</title>
+    <meta name="description" content="marionette-scaffolding">
+    <meta name="author" content="Nil Gradisnik">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="foundation.css"/>
 
-  <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <![endif]-->
 
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-  <!-- RequireJS kicks off 'data-main' file -->
-  <script data-main="app/main" src="lib/require/require.js"></script>
+    <!-- RequireJS kicks off 'data-main' file -->
+    <script data-main="app/main" src="lib/require/require.js"></script>
 </head>
 <body>
 
-  <div id="main"></div>
+<div id="main"></div>
+
+<div id="app">
+</div>
 
 </body>
+
+
+<script type="text/x-handlebars" id="index-template">
+    <h2>WELCOME</h2>
+    <P>A MARIONETTE DEMO</P>
+    <ul>
+        <li><a href="#" id="nav-products-list">List of products</a></li>
+        <li><a href="#">List of greetings</a></li>
+    </ul>
+</script>
+
+<script type="text/x-handlebars" id="product-layout-template">
+    <div id="summary"></div>
+    <div id="detail"></div>
+</script>
+
+<script type="text/x-handlebars" id="product-summary-template">
+    <div class="row small-up-2 medium-up-3 large-up-4">
+        <div class="column column-block">
+            <img src="//placehold.it/600x600" class="thumbnail" alt="">
+        </div>
+        <div class="column column-block">
+            <img src="//placehold.it/600x600" class="thumbnail" alt="">
+        </div>
+        <div class="column column-block">
+            <img src="//placehold.it/600x600" class="thumbnail" alt="">
+        </div>
+        <div class="column column-block">
+            <img src="//placehold.it/600x600" class="thumbnail" alt="">
+        </div>
+        <div class="column column-block">
+            <img src="//placehold.it/600x600" class="thumbnail" alt="">
+        </div>
+        <div class="column column-block">
+            <img src="//placehold.it/600x600" class="thumbnail" alt="">
+        </div>
+    </div>
+</script>
+
+<script type="text/x-handlebars" id="product-detail-template">
+    <div class="media-object">
+        <div class="media-object-section">
+            <img src= "http://placeimg.com/200/200/people">
+        </div>
+        <div class="media-object-section">
+            <h4>Dreams feel real while we're in them.</h4>
+            <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+        </div>
+    </div>
+</script>
+
+
+<script type="text/x-handlebars" id="product-template">
+    <div class="medium-4 columns">
+        <h3>Producto::</h3>
+        <div class="callout" data-equalizer-watch>
+            <img src="https://unsplash.it/200/250/?random">
+        </div>
+        <span><%=username%></span>
+        <span><%=rating%></span>
+        <span><%=favorites%></span>
+        <span><%=visits%></span>
+        <span><%=difficulty%></span>
+        <span><%=terrain%></span>
+        <span><%=size%></span>
+        <span><%=created%></span>
+    </div>
+</script>
 </html>
