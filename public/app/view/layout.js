@@ -4,7 +4,7 @@ define([
   'hbs!template/layout'
 ], function (Marionette, layout) {
 
-  return Marionette.Layout.extend({
+  return Marionette.LayoutView.extend({
     template: layout,
 
     regions: {

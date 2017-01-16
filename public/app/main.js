@@ -16,11 +16,11 @@ require.config({
     underscore: '../lib/underscore/underscore',
     backbone: '../lib/backbone/backbone',
 
-    // Marionette 
+    // Marionette
     // https://github.com/marionettejs/backbone.marionette
-    marionette : '../lib/backbone/backbone.marionette',
-    'backbone.wreqr' : '../lib/backbone/backbone.wreqr',
-    'backbone.babysitter' : '../lib/backbone/backbone.babysitter',
+    marionette : '../lib/backbone.marionette/lib/core/backbone.marionette',
+    'backbone.wreqr' : '../lib/backbone.wreqr/lib/backbone.wreqr',
+    'backbone.babysitter' : '../lib/backbone.babysitter/lib/backbone.babysitter',
 
     // Handlebars templating plugin
     // https://github.com/SlexAxton/require-handlebars-plugin
